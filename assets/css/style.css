@@ -1,0 +1,511 @@
+@import "default.css";
+
+/*HEADER*/
+header {
+    height: 85px;
+    background: #29083ce6;
+    transition: .4s;
+    position: fixed;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 235px;
+}
+
+.logo i {
+    font-size: 22px;
+    padding: 8px;
+    padding-right: 0;
+    transition: .2s;
+}
+
+.logo i:hover {
+    color: var(--sc);
+    cursor: pointer;
+}
+
+.menubar ul {
+    text-align: right;
+}
+
+.menubar ul li {
+    display: inline-block;
+}
+
+.menubar ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 12px;
+    color: var(--wc);
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.menubar ul li a:hover{
+    color: #DB00FF;
+}
+.menubar .active{
+    color: #DB00FF;
+}
+.menubar .login-menu {
+    background: #ffffff;
+    color: var(--pc);
+    border-radius: 5px;
+}
+
+/*HEADER*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.mobile-logo img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.mobile-logo i {
+    font-size: 20px;
+    float: right;
+    margin: 5px 20px;
+    color: var(--pc);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-logo i:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-size: 15px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: var(--pc);
+    font-weight: 400;
+}
+
+.custom.accordion-button:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    transform: none;
+    font-weight: 400;
+}
+
+.custom.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+
+.custom.accordion-button::after {
+    background-image: none;
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+
+.none.accordion-button::after {
+    content: none;
+}
+
+.custom.accordion-body {
+    padding: 0 0px;
+}
+
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pc);
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.custom.accordion-body ul li:hover {
+    color: var(--wc);
+    background: var(--rc);
+}
+
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+
+.custom.accordion-item a {
+    text-decoration: none;
+
+}
+
+
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+
+/*ACCORDION CUSTOM END*/
+
+.mobile-menu {
+    width: 350px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 2;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    transition: .4s;
+    padding: 10px 0;
+}
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(101, 41, 145, 0.71);
+    z-index: 1;
+    cursor: pointer;
+}
+.mobileAdd {
+    left: 0 !important;
+}
+.mobile-overlay {
+    position: inherit !important;
+}
+/*MOBILE MENU END*/
+
+/* BANNER PART CSS START */
+.banner-part{
+    background-image: url(../img/photos/main-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-overlay{
+    background: linear-gradient(355.26deg, rgba(19, 16, 15, 0.74) 43.78%, rgba(31, 26, 25, 0) 95.28%);
+    padding-top: 150px;
+    padding-bottom: 390px;
+}
+.banner-contect h1{
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
+    color: var(--wc);
+    text-transform: capitalize;
+}
+
+.support-item i{
+    font-size: 22px;
+    color: var(--phc);
+}
+.support-item h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--wc);
+    text-transform: capitalize;
+}
+.support-item p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--wc);
+    text-transform: capitalize;
+}
+
+.account-part{
+    position: absolute;
+    background: #737373;
+    padding: 0px 8px;
+    top: 25%;
+    right: 0px;
+}
+.account-part .cart{
+    position: relative;
+}
+.account-part .cart sup {
+    position: absolute;
+    top: -16px;
+    right: -7px;
+    background: var(--dpc);
+    color: var(--wc);
+    padding: 11px 4px;
+    border-radius: 50%;
+    border: 1px solid var(--wc);
+}
+/* BANNER PART CSS END */
+
+/* UPCOMMING PART CSS START */
+.upcomming {
+    background: var(--dpc);
+    border-radius: 10px;
+    color: var(--wc);
+    margin-top: -350px;
+    box-shadow: 0px 2px 5px 0px #0000001A;
+}
+.upcomming-content{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.upcomming h2{
+    text-transform: uppercase;
+}
+/* UPCOMMING PART CSS END */
+
+/* QUANTITY PART CSS START */
+.quality-item{
+    text-align: center;
+}
+.img-part {
+    background: var(--dpc);
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--phc);
+    margin-left: 50%;
+    transform: rotateX(-40);
+    transform: translateX(-60px);
+}
+/* QUANTITY PART CSS END */
+
+/* ABOUT BANNER PART CSS START */
+.about-coffeeincu{
+    background-image: url(../img/photos/about-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-overlay{
+    background: linear-gradient(269.9deg, rgba(0, 0, 0, 0.74) 30.89%, rgba(0, 0, 0, 0.03) 70.93%);
+}
+.about-content h2{
+    color: var(--phc);
+    text-transform: uppercase;
+}
+.about-content h5{
+    font-weight: 400;
+    color: var(--wc);
+}
+.about-coffeeincu .custom-btn{
+    color: var(--wc);
+    margin-bottom: 120px;
+}
+.about{
+    position: relative;
+}
+.arrow .left{
+    border: 1px solid #ffff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    color: var(--wc);
+    border-radius: 50%;
+    cursor: pointer;
+    left: 0;
+    top: 41%;
+}
+.arrow .left i{
+    font-size: 16px;
+}
+.arrow .right{
+    border: 1px solid #ffff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    color: var(--wc);
+    border-radius: 50%;
+    cursor: pointer;
+    right: 0;
+    top: 41%;
+}
+.arrow .right i{
+    font-size: 16px;
+}
+/* ABOUT BANNER PART CSS END */
+
+/* OUR MARKETPLACE PART CSS START */
+.section-title h3{
+    padding-bottom: 30px;
+    position: relative;
+}
+.section-title h3::after {
+    width: 60px;
+    height: 2px;
+    background: #2A0730;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-30px);
+    content: '';
+}
+.blog-item{
+    background: var(--dpc);
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+}
+.blog-item .time{
+    font-weight: 500;
+    font-size: 12px;
+    color: #B3B3B3;
+}
+.blog-item span{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--wc);
+}
+.blog-item h5{
+    color: var(--wc);
+}
+
+.see-more a{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--dpc);
+    transition: 0.4s;
+}
+.see-more a:hover{
+    color: var(--phc);
+}
+.see-more i{
+    font-size: 18px;
+}
+/* OUR MARKETPLACE PART CSS END */
+
+/* OUR PRODUCTS PART CSS START */
+.our-products .card{
+    background: var(--dpc);
+}
+.our-products .card h5{
+    color: var(--wc);
+}
+.our-products .card h4{
+    color: var(--toc);
+}
+.our-products .custom-btn{
+    color: var(--wc);
+    padding: 8px 46px;
+    text-transform: uppercase;
+}
+/* OUR PRODUCTS PART CSS END */
+
+/* CUSTOMER REVIEW PART CSS START */
+.customer-review .card{
+    background: var(--dpc);
+    padding: 30px;
+}
+.review h6{
+    color: #FFFFFFBF;
+}
+.review span{
+    color: #FFFFFFBF;
+}
+.description p{
+    color: #FFFFFFBF;
+}
+.review-point .review-full{
+    color: #F4AFFF;
+    font-size: 16px;
+}
+.review-point .review-half{
+    color: #DB00FF;
+    font-size: 16px;
+}
+/* CUSTOMER REVIEW PART CSS END */
+
+/* CONTACT US PART CSS END */
+.contact-us .contact-option i {
+    font-size: 22px;
+}
+.contact-us .contact-option p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #29083C;
+}
+.contact-form .custom-control{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--dpc);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #414141;
+}
+.contact-form .custom-btn{
+    color: var(--wc);
+}
+/* CONTACT US PART CSS END */
+
+/*FOOTER SECTION*/
+footer {
+    background: var(--dpc);
+    color: var(--wc);
+}
+
+.footer-menubar ul li a{
+    font-weight: 400;
+    font-size: 15px;
+    color : #FFFFFFBF;
+    transition: 0.4s;
+}
+.footer-menubar ul li a:hover{
+    color: var(--phc);
+}
+
+.social-icon ul li a {
+    padding: 5px 8px;
+    font-size: 20px;
+    color: #ffffff;
+    border: 1px solid var(--wc);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.social-icon ul li a:hover{
+    background: var(--phc);
+}
+/*COPYRIGHT SECTION END*/

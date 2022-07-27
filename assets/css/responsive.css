@@ -1,0 +1,79 @@
+@media only screen and (max-width:991px) {}
+
+
+@media only screen and (max-width:767px) {
+    header {
+        height: 65px;
+    }
+    .logo img {
+        width: 60px;
+    }
+    .login-left {
+        height: 390px;
+    }
+
+}
+
+@media only screen and (max-width:575px) {
+    body {
+        font-size: 14px;
+    }
+    .logo img {
+        width: 36px;
+    }
+    .upcomming-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .custom-btn {
+        font-size: 18px;
+        padding: 12px 25px;
+        letter-spacing: 3px;
+    }
+    .section-title h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    body{
+        font-size: 14px;
+    }
+    .logo img {
+        width: 36px;
+    }
+
+    .banner-contect h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .banner-overlay {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .banner-contect .col-12{
+        width: 50%;
+    }
+    .upcomming {
+        margin-top: -190px;
+    }
+    .upcomming-content {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .upcomming-img img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .arrow{
+        display: none;
+    }
+    .custom-btn {
+        font-size: 16px;
+        padding: 8px 48px;
+    }
+
+
+}
