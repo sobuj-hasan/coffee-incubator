@@ -75,5 +75,15 @@
         padding: 8px 48px;
     }
 
+    .about-content h2 {
+        font-size: 20px;
+    }
+    .about-content h5 {
+        font-size: 15px;
+    }
+    .about-coffeeincu .custom-btn {
+        margin-bottom: 40px;
+    }
+
 
 }
